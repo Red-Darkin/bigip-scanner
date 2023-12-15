@@ -20,7 +20,7 @@ See [full write-up](https://bishopfox.com/blog/big-ip-scanner-cve-2022-1388) for
 ### Install
 
 ```
-git clone https://github.com/bishopfox/bigip-scanner.git && cd bigip-scanner
+git clone https://github.com/Red-Darkin/bigip-scanner.git && cd bigip-scanner
 python3 -m venv venv
 source venv/bin/activate
 python3 -m pip install -U pip

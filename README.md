@@ -31,7 +31,7 @@ python3 -m pip install -r requirements.txt
 
 ```
 $ python3 bigip-scanner.py -h
-usage: bigip-scanner.py [-h] -t TARGET [-v VERSION_TABLE] [-a] [-d]
+usage: bigip-scanner.py [-h] -t TARGET [-v VERSION_TABLE] [-a] [-d] [-f,--file filename.txt]
 
 Determine the running software version of a remote F5 BIG-IP management interface.
 Developed with ❤️ by the Bishop Fox Cosmos team.
@@ -39,12 +39,14 @@ Developed with ❤️ by the Bishop Fox Cosmos team.
 optional arguments:
   -h, --help        show this help message and exit
   -t TARGET         https://example.com
+  -f --file         filename.txt [e.g. https://127.0.0.1]
   -v VERSION_TABLE  version-table.csv
   -a                request all resources; don't stop after an exact match
   -d                debug mode
 ```
 
 In the following example, `https://example.com/tmui/tmui/login/images/logo_f5.png` has an HTTP response header that indicates that it's running BIG-IP version `16.1.2-0.0.18` which, according to [F5's security advisory](https://support.f5.com/csp/article/K23605346), is in the _vulnerable_ range for CVE-2022-1388.
+[K000137353: BIG-IP Configuration utility unauthenticated remote code execution vulnerability CVE-2023-46747](https://my.f5.com/manage/s/article/K000137353) check for vulnerables version for CVE-2023-46747.
 
 ```
 $ python3 bigip-scanner.py -t https://example.com | jq

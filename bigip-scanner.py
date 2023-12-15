@@ -230,7 +230,6 @@ def main():
 
     # Loop through each target.
     for target in targets:
-        print(f"Scanning target: {target}")
         matches = scanner.scan_target(target=target, request_all=args.request_all)
         if not matches.empty:
             print(

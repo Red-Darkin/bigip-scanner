@@ -31,10 +31,10 @@ python3 -m pip install -r requirements.txt
 
 ```
 $ python3 bigip-scanner.py -h
-usage: bigip-scanner.py [-h] -t TARGET [-v VERSION_TABLE] [-a] [-d] [-f,--file filename.txt]
+usage: bigip-scanner.py [-h] -t TARGET [-v VERSION_TABLE] [-a] [-d] [-f] filename.txt
 
 Determine the running software version of a remote F5 BIG-IP management interface.
-Developed with ❤️ by the Bishop Fox Cosmos team.
+Developed with ❤ by the Bishop Fox Cosmos team & Forked by Red-Darkin.
 
 optional arguments:
   -h, --help        show this help message and exit

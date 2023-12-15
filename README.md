@@ -46,8 +46,10 @@ optional arguments:
 ```
 
 In the following example, `https://example.com/tmui/tmui/login/images/logo_f5.png` has an HTTP response header that indicates that it's running BIG-IP version `16.1.2-0.0.18` which, according to [F5's security advisory](https://support.f5.com/csp/article/K23605346), is in the _vulnerable_ range for CVE-2022-1388.
+
 [K000137353: BIG-IP Configuration utility unauthenticated remote code execution vulnerability CVE-2023-46747](https://my.f5.com/manage/s/article/K000137353) check for vulnerables version for CVE-2023-46747.
-Exploit CVE-2023-46747 for by W01fh4cker [CVE-2023-46747-RCE](https://github.com/W01fh4cker/CVE-2023-46747-RCE)
+
+Exploit for CVE-2023-46747 by W01fh4cker [CVE-2023-46747-RCE](https://github.com/W01fh4cker/CVE-2023-46747-RCE)
 
 ```
 $ python3 bigip-scanner.py -t https://example.com | jq

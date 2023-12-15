@@ -192,11 +192,11 @@ def main():
     parser = argparse.ArgumentParser(
         description="""
             Determine the software version of a remote BIG-IP management interface.
-            Developed with ❤ by the Bishop Fox Cosmos team.
+            Developed with ❤ by the Bishop Fox Cosmos team & Forked by Red-Darkin..
         """
     )
     parser.add_argument("-t", dest="target", help="https://example.com")
-    parser.add_argument("-f", "--file", dest="file", help="File with a list of IP addresses")
+    parser.add_argument("-f", "--file", dest="file", help="File with a list of IP addresses [e.g. https://127.0.0.1]")
     parser.add_argument(
         "-v",
         dest="version_table",
